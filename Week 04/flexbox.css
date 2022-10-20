@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white;
+}
+div {
+    outline: dashed 1px white;
+    padding: 2.0em;
+}
+.holder1 {
+    display: flex;
+    justify-content: space-between;
+}
+.holder2 {
+    display: flex;
+    justify-content: flex-end;
+}
+.holder3 {
+    display: flex;
+    justify-content: flex-start;
+}
+.holder4 {
+    display: flex;
+    justify-content: space-around;
+}
+.holder5 {
+    display: flex;
+    justify-content: space-evenly;
+}

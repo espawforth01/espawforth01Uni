@@ -1,0 +1,22 @@
+.rounded-border {
+	border-radius:5px;
+}
+
+.solid-border {
+	border-style:solid;
+	border-color:#000;
+}
+
+.nice-padding {
+	padding:0.5em;
+}
+
+.arial-font {
+	font-family:Arial, Helvetica, Sans-serif;
+}
+
+.bg {
+	background-color:#d00;
+	color:white;
+	font-weight:bold;
+}

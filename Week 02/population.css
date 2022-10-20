@@ -1,0 +1,19 @@
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#other_countries {
+    border: solid 1px black;
+}
+
+li.europe {
+    color: red;
+}
+
+ol li {
+    background-color: blue;
+}
+
+div#small_pop_countries ul li.africa {
+    color: green;
+}

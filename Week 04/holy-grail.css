@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+div {
+    outline: dashed 1px white;
+    padding: 15px;
+}
+.holder {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 100px 100px 50px;
+}
+.holder .header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.holder .footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

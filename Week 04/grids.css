@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+    color: white;
+}
+div {
+    outline: dashed 1px white;
+    padding: 15px;
+}
+.holder1 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+}
+.holder2 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 50px 50px 50px;
+}
+.holder3 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.holder4 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.holder4 .block1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.holder4 .block2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.holder4 .block4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.holder4 .block8 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.holder4 .block9 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
