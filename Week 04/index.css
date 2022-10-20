@@ -1,0 +1,48 @@
+body {
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: underline 1px blue;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6, p {
+    padding: 2px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+.holder, .img_holder, .intro, .industry, .sport, .famous-people {
+    outline: 1px dashed pink;
+}
+.holder {
+    display: flex;
+    flex-flow: row wrap;
+}
+.img_holder, .intro, .industry, .sport {
+    width: 50%;
+}
+.famous-people {
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: black;
+        color: white;
+        min-width: 330px;
+    }
+    .img_holder, .intro, .industry, .sport {
+        width: 100%;
+    }
+    .famous-people {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    img {
+        width: auto;
+    }
+}
