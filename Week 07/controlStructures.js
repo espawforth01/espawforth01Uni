@@ -185,41 +185,31 @@
 // a) Can you re-write this program using a for loop so that the code is more efficient and easier to maintain?
 // b) One problem is that if the user answers correctly on the first attempt they are still asked two more times. Do some research into the 'break' statement e.g. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break
 
-let userGuess;
-let userGuessNum = parseInt(1);
-alert("You get three guesses for the following question");
+// let userGuess;
+// let userGuessNum = parseInt(1);
+// alert("You get three guesses for the following question");
 
-// while(userGuessNum >= 3) {
+// for (let i = 1; i <= 3; i++) {
 //     userGuess=parseInt(prompt("How many times have Huddersfield Town won the FA Cup?"));
 //     if(userGuess===1){
 //         alert("You are correct");
+//         i = 50;
 //     }else if(userGuess<1){
 //         alert("Too low");
 //     }else if(userGuess>1){
 //         alert("Too high");
 //     }
-//     userGuessNum++;
 // }
-
-for (let i = 1; i <= 3; i++) {
-    userGuess=parseInt(prompt("How many times have Huddersfield Town won the FA Cup?"));
-    if(userGuess===1){
-        alert("You are correct");
-    }else if(userGuess<1){
-        alert("Too low");
-    }else if(userGuess>1){
-        alert("Too high");
-    }
-}
 
 // 14) Uncomment the following program. It is an example from the lecture slides.
 // a) Modify the program so that every time the user guesses, the program tells the user if their guess is too high or too low.
 // b) If you can get this to work it makes the game too easy. Modify the program so that a random number between 1 and 100 is generated (instead of 1 to 10).
 
-// const ranNum = Math.floor(Math.random()*10+1);
+// const ranNum = Math.floor(Math.random()*101);
 // let correct = false;
 // let count = 0;
 // let msg;
+
 // while(correct === false)
 // {
 //     count++;
@@ -227,6 +217,10 @@ for (let i = 1; i <= 3; i++) {
 //     if(userGuess === ranNum)
 //     {
 //         correct = true;
+//     } else if(userGuess < ranNum) {
+//         console.log(`Too low`)
+//     } else if(userGuess > ranNum) {
+//         console.log(`Too high`)
 //     }
 // }
 // msg = `You guessed the random number is ${ranNum} it took you ${count}`;
@@ -237,5 +231,10 @@ for (let i = 1; i <= 3; i++) {
 // }
 // console.log(msg)
 
-
 // 15) Write a program that asks the user for a colour and then changes the background colour of the page to the colour the user enters. The program should repeat this process until the user doesn't enter a colour i.e. the input will be equal to an empty string "". You will need to use a while loop.
+
+let userCol;
+while(userCol !=="") {
+    userCol = prompt("Enter a color");
+    document.body.style.backgroundColor = userCol;
+}
