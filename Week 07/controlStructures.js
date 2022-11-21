@@ -71,19 +71,15 @@
 // const capitalFrance = prompt("What is the capital of France");
 // const capitalGermany = prompt("What is the capital of Germany");
 
-// const capitalEngland2 = capitalEngland.charAt(0).toUpperCase() + capitalEngland.substr(1).toLowerCase();
-// const capitalFrance2 = capitalFrance.charAt(0).toUpperCase() + capitalFrance.substr(1).toLowerCase();
-// const capitalGermany2 = capitalGermany.charAt(0).toUpperCase() + capitalGermany.substr(1).toLowerCase();
-
-// if(capitalEngland2 === "London") {
+// if(capitalEngland === "London") {
 //     score++;
 //     console.log(`Correct. London is the capital of England`)
 // }
-// if(capitalFrance2 === "Paris") {
+// if(capitalFrance === "Paris") {
 //     score++;
 //     console.log(`Correct. Paris is the capital of France`)
 // }
-// if(capitalGermany2 === "Berlin") {
+// if(capitalGermany === "Berlin") {
 //     score++;
 //     console.log(`Correct. Berlin is the capital of Germany`)
 // }
