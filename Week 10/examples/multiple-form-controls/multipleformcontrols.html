@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Form Controls</title>
+    <style>
+    div, fieldset{margin:1.5em;}
+    </style>
+</head>
+<body>
+
+<form>
+
+<div>
+<label for="search">Please enter a search term:</label>
+<input id="search" type="text" >
+</div>
+
+<div>
+<label for="terms">I agree to the terms and conditions</label>
+<input type="checkbox" value="yes" name="terms" id="terms"> 
+</div>
+
+<fieldset>
+<legend>What is the capital of Venezuala?</legend>
+<label for="lima">Lima</label>
+<input type="radio" name="question" id="lima" value="Lima"/>
+<label for="caracas">Caracas</label>
+<input type="radio" name="question" id="caracas" value="Caracas"/>
+<label for="buenos">Buenos Aires</label>
+<input type="radio" name="question" id="buenos" value="Buenos Aires"/>
+<label for="sucre">Sucre</label>
+<input type="radio" name="question" id="sucre" value="Sucre"/>
+</fieldset>
+
+<div>
+<input type="button" id="myButton" value="Click me">
+</div>
+
+</form>
+
+
+<script src="multiple.js" type="text/javascript"></script>
+</body>
+</html>
+
