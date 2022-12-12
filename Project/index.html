@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phone Finder</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Phone Finder</h1>
+            <p>Input you parameters and we will output your ideal choice(s).</p>
+        </div>
+
+        <div id="searchForm">
+            <form>
+                <div id="operatingSystemSelection">
+                    <label>Choose an operating system:</label>
+                    <select id="operatingSystem">
+                        <option value=""></option>
+                        <option value="android">Android</option>
+                        <option value="ios">iOS</option>
+                        <option value="symbian">Symbian OS</option>
+                    </select>
+                </div>
+
+                <div id="priceSelection">
+                    <div class="slider">
+                        <label for="price">Price:</label>
+                        <input id="price" type="range" min="0" max="1200" value="1200" oninput="rangeValue.innerText = this.value">
+                        <p id="rangeValue">1200</p>
+                    </div>
+                </div>
+
+                <div id="manufacturerSelection">
+                    <fieldset id="manufacturer">
+                        <legend>Choose a manufacturer:</legend>
+                        <label for="google">Google</label><input type="checkbox" value="google" id="google">
+                        <label for="apple">Apple</label><input type="checkbox" value="apple" id="apple">
+                        <label for="motorola">Motorola</label><input type="checkbox" value="motorola" id="motorola">
+                        <label for="samsung">Samsung</label><input type="checkbox" value="samsung" id="samsung">
+                        <label for="nokia">Nokia</label><input type="checkbox" value="nokia" id="nokia">
+                    </fieldset>
+                </div>
+
+                <div id="memorySelection">
+                    <label>Choose a minimum memory size:</label>
+                    <select id="operatingSystem">
+                        <option value=""></option>
+                        <option value="4mb">4 MB</option>
+                        <option value="32gb">32 GB</option>
+                        <option value="64gb">64 GB</option>
+                        <option value="128gb">128 GB</option>
+                        <option value="256gb">256 GB</option>
+                        <option value="512gb">512 GB</option>
+                    </select>
+                </div>
+
+                <div id="colorSelection">
+                    <fieldset id="color">
+                        <legend>Choose a color:</legend>
+                        <label for="white">White</label><input type="checkbox" value="white" id="white">
+                        <label for="green">Green</label><input type="checkbox" value="green" id="green">
+                        <label for="black">Black</label><input type="checkbox" value="black" id="black">
+                        <label for="gold">Gold</label><input type="checkbox" value="gold" id="gold">
+                        <label for="gray">Gray</label><input type="checkbox" value="gray" id="gray">
+                        <label for="silver">Silver</label><input type="checkbox" value="silver" id="silver">
+                        <label for="red">Red</label><input type="checkbox" value="red" id="red">
+                        <label for="blue">Blue</label><input type="checkbox" value="blue" id="blue">
+                        <label for="pink">Pink</label><input type="checkbox" value="pink" id="pink">
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+
+        <div id="searchResults">
+            
+        </div>
+
+        <div id="footer">
+            <p id="footerContent">Created by - <a href="https://selene.hud.ac.uk/u2264512/portfolio/" target="_blank">Ellis Spawforth</a>, 2022 ©</p>
+        </div>
+    </body>
+</html>
